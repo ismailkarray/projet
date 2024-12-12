@@ -1,0 +1,146 @@
+/* Conteneur principal pour la page de connexion */
+.login-page {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to bottom right, #add8e6, #f0f8ff); /* Dégradé bleu clair */
+    color: #ffffff;
+  }
+  
+  /* Boîte contenant le formulaire */
+  .login-box {
+    background-color: #ffffff;
+    width: 350px;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Ombre douce */
+    text-align: center;
+    color: #264653; /* Couleur texte bleu foncé pour un bon contraste */
+  }
+  
+  /* Titre de la page */
+  .login-box h1 {
+    font-size: 2rem;
+    color: #4682b4; /* Couleur bleu acier */
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+  }
+  
+  /* Chaque groupe de formulaire (champ + label) */
+  .form-group {
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  
+  /* Labels pour les champs */
+  label {
+    display: block;
+    font-size: 1rem;
+    color: #264653; /* Couleur bleu foncé pour les labels */
+    margin-bottom: 5px;
+    font-weight: 500;
+  }
+  
+  /* Champs de saisie */
+  input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #add8e6; /* Bordure bleu clair */
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #333;
+    background-color: #f0f8ff; /* Fond bleu pâle pour les champs */
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /* Effet au survol des champs */
+  input:focus {
+    border-color: #4682b4; /* Bordure bleu foncé au focus */
+    box-shadow: 0 0 8px rgba(70, 130, 180, 0.5); /* Ombre bleu clair au focus */
+    outline: none;
+  }
+  
+  /* Bouton de connexion */
+  .login-button {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    background-color: #4682b4; /* Fond bleu foncé pour le bouton */
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /* Effet au survol du bouton */
+  .login-button:hover {
+    background-color: #5a9bd5; /* Fond bleu clair au survol */
+    transform: scale(1.05); /* Légère mise à l'échelle au survol */
+  }
+  
+  /* Texte pour les erreurs ou autres messages */
+  .error-message {
+    color: #e63946; /* Rouge intense pour les erreurs */
+    font-size: 0.9rem;
+    margin-top: -10px;
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  
+  /* Pour les petits écrans */
+  @media (max-width: 768px) {
+    .login-box {
+      width: 90%;
+      padding: 20px;
+    }
+  }
+  .social-login {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .social-login button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 250px;
+  }
+  
+  .social-login img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+  }
+  
+  .google-login-button {
+    background-color: #ffffff;
+    color: #000000;
+    border: 1px solid #dcdcdc;
+  }
+  
+  .google-login-button:hover {
+    background-color: #f2f2f2;
+  }
+  
+  .facebook-login-button {
+    background-color: #1877f2;
+    color: #ffffff;
+  }
+  
+  .facebook-login-button:hover {
+    background-color: #145dbf;
+  }
+  

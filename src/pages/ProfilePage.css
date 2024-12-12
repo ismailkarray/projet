@@ -1,0 +1,141 @@
+/* Style général de la page */
+.profile-page {
+    font-family: 'Arial', sans-serif;
+    padding: 40px;
+    background: linear-gradient(135deg, #f4f9f9, #e3e8e8); /* Dégradé léger */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centrer horizontalement */
+    justify-content: flex-start; /* Titre en haut */
+  }
+  
+  /* Titre principal */
+  .profile-page h1 {
+    font-size: 2.8rem;
+    color: #264653;
+    margin-bottom: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  
+  /* Formulaire de modification des informations personnelles */
+  .profile-info {
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+    width: 100%;
+    max-width: 400px; /* Limiter la largeur */
+    transition: transform 0.3s ease;
+  }
+  
+  .profile-info:hover {
+    transform: translateY(-5px); /* Animation au survol */
+  }
+  
+  .profile-info h2 {
+    font-size: 1.8rem;
+    color: #2a9d8f;
+    margin-bottom: 20px;
+    font-weight: 600;
+    text-align: left;
+  }
+  
+  .profile-info label {
+    font-size: 1rem;
+    color: #264653;
+    margin-bottom: 6px;
+    display: block;
+    text-align: left;
+    font-weight: 500;
+  }
+  
+  /* Style des champs du formulaire */
+  .profile-info input {
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    font-size: 1rem;
+    color: #333;
+    background-color: #f9f9f9;
+    transition: border 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  /* Focus sur les champs du formulaire */
+  .profile-info input:focus {
+    border-color: #2a9d8f;
+    box-shadow: 0 0 8px rgba(42, 157, 143, 0.5);
+    outline: none;
+  }
+  
+  /* Section des événements intéressants */
+  .interested-events {
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px; /* Limiter la largeur */
+    margin-bottom: 40px;
+  }
+  
+  .interested-events h2 {
+    font-size: 1.8rem;
+    color: #2a9d8f;
+    margin-bottom: 20px;
+    font-weight: 600;
+  }
+  
+  .interested-events ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .interested-events li {
+    background-color: #fafafa;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .interested-events li:hover {
+    background-color: #f1f1f1;
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .interested-events li h3 {
+    font-size: 1.2rem;
+    color: #264653;
+    margin-bottom: 8px;
+    font-weight: 600;
+  }
+  
+  .interested-events li p {
+    font-size: 1rem;
+    color: #6c757d;
+  }
+  
+  /* Style pour la page mobile */
+  @media (max-width: 768px) {
+    .profile-info input {
+      width: 100%;
+    }
+  
+    .profile-page {
+      padding: 20px;
+    }
+  
+    .interested-events li {
+      padding: 12px;
+    }
+  }
+  
